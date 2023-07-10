@@ -80,4 +80,54 @@ Occasionally, conflicts can arise due to personal differences or clashes of pers
 
 ##### Resistance to QA processes: 
 Team members may resist following established QA processes or participating in testing activities. Clearly communicate the benefits of QA processes and involve the team in defining and improving those processes. Educate teammates on the value of testing and quality assurance in delivering high-quality products. Provide training and support to help team members understand and contribute effectively to the QA efforts.
+##### JENKINS PIPELINE
+
+```
+Manage Plugins -PIPELINE
+iN the "Pipeline" section. Here, you can define the pipeline script using either the Scripted or Declarative syntax.
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                // Build steps
+            }
+        }
+        stage('Test') {
+            steps {
+                // Test steps
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Deployment steps
+            }
+        }
+    }
+}
+
+ Declarative syntax.
+
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                // Build steps
+            }
+        }
+        stage('Test') {
+            steps {
+                // Test steps
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Deployment steps
+            }
+        }
+    }
+}
+
+``` 
 
